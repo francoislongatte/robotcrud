@@ -40,6 +40,6 @@ mongoose
     'mongodb+srv://francois:Pl967101pl@cluster0-38h4f.gcp.mongodb.net/robots?retryWrites=true', { useNewUrlParser: true }
   )
   .then(result => {
-    app.listen(${process.env.PORT);
+    app.listen(80);
   })
   .catch(err => console.log(err));
