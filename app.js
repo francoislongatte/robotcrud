@@ -4,6 +4,8 @@ const express = require('express');
 const bodyParser = require('body-parser');
 const mongoose = require('mongoose');
 
+var port = process.env.PORT || 8080;
+
 const robotsRoutes = require('./routes/robot');
 const authRoutes = require('./routes/auth');
 
@@ -39,6 +41,6 @@ mongoose
     'mongodb+srv://francois:Pl967101pl@cluster0-38h4f.gcp.mongodb.net/robots?retryWrites=true', { useNewUrlParser: true }
   )
   .then(result => {
-    app.listen(80);
+    app.listen(port);
   })
   .catch(err => console.log(err));
