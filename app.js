@@ -3,7 +3,6 @@ const path = require('path');
 const express = require('express');
 const bodyParser = require('body-parser');
 const mongoose = require('mongoose');
-const multer = require('multer');
 
 const robotsRoutes = require('./routes/robot');
 const authRoutes = require('./routes/auth');
